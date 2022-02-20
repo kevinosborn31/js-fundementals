@@ -12,3 +12,14 @@ function describe(testSuiteName, func) {
         );
     }
   }
+
+  function it(testCaseName, func) {
+    console.log(`beginning test case ${testCaseName}`);
+  
+    try {
+      func();
+      console.log(`successfully completed test case ${testCaseName}`);
+    } catch (errorMessage) {
+      throw {testCaseName, errorMessage};
+    }
+  }
