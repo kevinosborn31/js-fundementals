@@ -56,3 +56,7 @@ function describe(testSuiteName, func) {
       }
     }
   }
+
+exports.describe = describe;
+exports.it = it;
+exports.expect = expect;
