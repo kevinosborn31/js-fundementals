@@ -23,3 +23,7 @@ function describe(testSuiteName, func) {
       throw {testCaseName, errorMessage};
     }
   }
+
+  function expect(actual) {
+    return new ExpectFunctions(actual);
+  }
