@@ -35,8 +35,8 @@ function createSithName(originalName) {
 
 let darkSide = [];
 
-starWarsCharacters.forEach(character => turnToDarkSide(character));
 for (i=0; i < starWarsCharacters.length; i++) {
-
+	let darkSideCharacter = turnToDarkSide(starWarsCharacters[i]);
+  darkSide.push(darkSideCharacter);
 }
-console.log(starWarsCharacters);
+console.log(`All characters are evil: ${darkSide}`)
