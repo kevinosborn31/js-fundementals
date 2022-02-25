@@ -58,3 +58,11 @@ Promise.any([
     new Promise((res, rej) => setTimeout(() => res(1), 1000)),
 ]).then(console.log).catch(console.log);
 
+
+
+
+
+const asdf = new Promise((resolve, reject) => {
+    setTimeout(() => reject(new Error('Something went wrong')), 1000);
+});
+
